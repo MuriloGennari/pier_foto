@@ -44,6 +44,7 @@ async function abrirCamera() {
         streamAtual = stream;
         video2.srcObject = stream;
     } catch (err) {
+        alert("Erro ao acessar câmera: " + err.message);
         console.error(err);
     }
 }
@@ -83,7 +84,6 @@ btn.addEventListener("click", () => {
             foto.style.display = "block";
             voltar.style.display = "block";
 
-            // ✅ MOSTRA AS DUAS MENSAGENS
             mensagemFinal.style.display = "block";
             mensagemInstrucao.style.display = "block";
         })
