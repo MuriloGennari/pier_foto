@@ -25,7 +25,7 @@
 
 <div id="precamera">
   <div id="boxInstrucao">
-    <h1 id="TituloInstrucao">Prepare-se para a foto</h1>
+    <h1>Prepare-se para a foto</h1>
     <ul id="TextInstrucao">
       <li>Ambiente bem iluminado</li>
       <li>Use a câmera frontal</li>
@@ -47,10 +47,15 @@
   </div>
 
   <img id="fotoFinal" />
-
   <canvas id="canvas"></canvas>
-
+  <p id="mensagemFinal">Foto enviada com sucesso ✅</p>
   <button id="voltar">Tirar outra foto</button>
+</div>
+
+<!-- LOADING GLOBAL -->
+<div id="loading">
+  <div class="spinner"></div>
+  <p>Enviando sua foto...</p>
 </div>
 
 <script src="script.js"></script>
