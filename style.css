@@ -284,4 +284,5 @@ html, body {
   border-radius: 50%;
   font-size: 18px;
   cursor: pointer;
+  z-index: 10;
 }
